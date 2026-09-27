@@ -1,0 +1,27 @@
+name: VeloriaLogin
+version: '1.0.0'
+main: com.veloria.login.VeloriaLogin
+author: Veloria
+api-version: '1.21.11'
+description: Veloria icin guvenli ve otomatik giris ve kayit sistemi
+commands:
+  login:
+    description: Giris yap
+    aliases: [l]
+    usage: /login <sifre>
+  register:
+    description: Kayit ol
+    aliases: [reg]
+    usage: /register <sifre> <sifre>
+  giris:
+    description: Giris yonetimi
+    aliases: [giriş]
+    usage: /giris <ayarla|reload>
+  sifre:
+    description: Sifre yonetimi
+    aliases: [şifre]
+    usage: /sifre <bak|sifirla|liste> [oyuncu]
+permissions:
+  velorialogin.admin:
+    description: VeloriaLogin yonetim yetkisi (OP varsayilan)
+    default: op
